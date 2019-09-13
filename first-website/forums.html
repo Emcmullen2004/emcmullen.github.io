@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+    <body>
+        <!--The first block of code is 
+            
+        -->
+        <form method="get">
+
+            <!--First Block-->
+            <label for="address">Address:</label>
+            <input type="text" name="address" placeholder="Enter your address here" size="25" maxlength="100" id="address" />
+
+            <label for="postcode">Postal Code:</label>
+            <input type="text" name="postcode" placeholder="Enter your postal code here" size="25" maxlength="10" id="postcode" />
+
+            <label for="city">City:</label>
+            <input type="text" name="city" placeholder="Enter your city here" size="25" maxlength="100" id="city" />
+
+            <!--Second Block-->
+            <p>Please choose a shipping method in the drop-down menu below:</p>
+
+            <select id="shipping">
+                <option value="standardship">Standard Shipping</option>
+                <option value="1dayship">One-Day Shipping</option>
+                <option value="2dayship">Two-Day Shipping</option>
+            </select>
+
+            <!--Third Block-->
+            <p>Please select payment method below:</p>
+
+            <label><input type="radio" name="payopt" value="paypal" checked><strong>Paypal</strong></label>
+            <br />
+            <label><input type="radio" name="payopt" value="debitcard"><u>Debit Card</u></label>
+            <br />
+            <label><input type="radio" name="payopt" value="creditcard"><i>Credit Card</i></label>
+            <br />
+            <label for="comments">Comments</label>
+            <br/>
+            <textarea rows="4" cols="40" id="comments" name="comments">
+            </textarea>
+            <br/>
+            
+            <!--Fourth Block-->
+            <label><input type="checkbox" name="email" checked/>Sign me up for E-Mail Updates</label>
+            <br/>
+            <label><input type="checkbox" name="savepayinfo" checked/>Save my Payment Information</label>
+            <br/>
+            <br />
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
